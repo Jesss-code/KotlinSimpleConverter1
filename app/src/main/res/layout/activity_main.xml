@@ -8,9 +8,9 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="353dp"
+        android:layout_width="469dp"
+        android:layout_height="917dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,35 +21,55 @@
             android:orientation="vertical"
             android:textAlignment="center">
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
             <TextView
+                android:id="@+id/screenTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SIMPLE CONVERTER APP"
+                android:text="@string/simple_converter_app"
                 android:textAlignment="center"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="#24B336"/>
+                android:textColor="#24B336"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/usernameTextField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name"
+                android:hint="@string/put_the_username"
                 android:textAlignment="center" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/lengthButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="@string/length" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/weightButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="@string/weight" />
+
+            <Button
+                android:id="@+id/temperatureButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/length_unit" />
         </LinearLayout>
     </ScrollView>
 

@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">KotlinSimpleConverter</string>
+    <string name="simple_converter_app">SIMPLE CONVERTER APP</string>
+    <string name="put_the_username">Put the username.</string>
+    <string name="length">Length</string>
+    <string name="weight">WEIGHT</string>
+    <string name="temperature">TEMPERATURE</string>
+
+    <string-array name="length_unit">
+        <item>Nanometers</item>
+        <item>Millimeters</item>
+        <item>Centimeters</item>
+        <item>Meters</item>
+        <item>Kilometers</item>
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Yards</item>
+        <item>Miles</item>
+        <item>Nautical miles</item>
+
+    </string-array>
+
 </resources>
